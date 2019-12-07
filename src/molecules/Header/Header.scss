@@ -1,0 +1,46 @@
+header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+
+    .header-content {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            padding: 0;
+            margin-left: 0;
+            list-style: none;
+
+            li {
+                padding: 0 30px;
+            }
+        }
+
+        .right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+
+            .my-account {
+                display: flex;
+                align-items: center;
+                
+                img {
+                    padding: 0 5px;
+                    transition: .2s;
+                }
+                
+                a {
+                    color: #666;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
