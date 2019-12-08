@@ -18,6 +18,7 @@ Server will be running on localhost:3000
 
 * [React](reactjs.org) - JS
 * [NumeralJS](numeraljs.com) - Currency format
+* [PubSubJS][https://github.com/mroderick/PubSubJS] - Exchanging data between components
 * [SASS](https://sass-lang.com/) - CSS pre-processor
 * [Bootstrap Grid](https://getbootstrap.com/) - Grid system
 * [Axios](https://github.com/axios/axios) - HTTP Requests
