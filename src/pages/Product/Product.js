@@ -19,7 +19,7 @@ class Product extends PureComponent {
   }
 
   decreaseQuantity = () => {
-    if(this.state.quantity > 1) {
+    if (this.state.quantity > 1) {
       this.setState({
         quantity: this.state.quantity - 1,
         totalValue: this.state.totalValue - this.state.product.price

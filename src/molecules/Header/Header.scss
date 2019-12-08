@@ -15,32 +15,16 @@ header {
             li {
                 padding: 0 30px;
             }
+
+            @media(max-width: 1024px) {
+                display: none;
+            }
         }
 
         .right {
             margin-left: auto;
             display: flex;
             align-items: center;
-
-            .my-account {
-                display: flex;
-                align-items: center;
-                
-                img {
-                    padding: 0 5px;
-                    transition: .2s;
-                }
-                
-                a {
-                    color: #666;
-                }
-
-                &:hover {
-                    img {
-                        transform: scale(1.1);
-                    }
-                }
-            }
         }
     }
 }

@@ -52,13 +52,17 @@ class Cart extends PureComponent {
             alt={product.productName}
           />
           <div className='content-right'>
-            <h3>{product.productName}</h3>
-            <div className='quantity'>
-              <span className='sub'>-</span>
-              <span className='number'></span>
-              <span className='add'>+</span>
+            <div className='content-right-title'>
+              <h3>{product.productName}</h3>
             </div>
-            <span className='price'>{numeral(product.price).format('$0,00.00')}</span>
+            <div className='quantity-price'>
+              <div className='quantity'>
+                <span className='plus'>-</span>
+                <span className='number'>1</span>
+                <span className='minus'>+</span>
+              </div>
+              <span className='price'>{numeral(product.price).format('$0,00.00')}</span>
+            </div>
           </div>
         </div>
       ))

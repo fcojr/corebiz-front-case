@@ -12,6 +12,13 @@
             width: 270px;
             margin-right: 20px;
 
+            
+            @media(max-width: 1024px) {
+                margin-right: 0;
+                width: initial;
+                text-align: center;
+            }
+
             h2 {
                 font-weight: 400;
                 font-size: 40px;
@@ -26,10 +33,23 @@
             }
         }
 
+        p {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        @media(max-width: 1024px) {
+            flex-direction: column;
+        }
+
         form {
             display: flex;
             align-items: center;
             flex: 1;
+
+            @media(max-width: 1024px) {
+                width: 100%;
+            }
 
             input, button {
                 height: 50px;
@@ -43,6 +63,13 @@
             input {
                 flex: 1;
                 padding: 0 10px;
+
+                @media(max-width: 1024px) {
+                    flex: initial;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+
             }
     
             button {
@@ -55,6 +82,10 @@
                 &:hover {
                     transform: scale(1.05);
                 }
+            }
+
+            @media(max-width: 1024px) {
+                flex-direction: column;
             }
         }
     }
